@@ -21,7 +21,7 @@ Add test planning, safe active web testing, the full Textual TUI with live scori
 - `testing/testN.md` test plan generator.
 - `test-results.md` append workflow.
 - Safe active test suite (headers, CORS, cookies, canaries).
-- Full Textual TUI (replaces Phase 1 Rich streaming).
+- Full Textual TUI (replaces Phase 1 Rich streaming). **Must be the best, most beautiful and responsive TUI possible.**
 - Live finding cards with VulnScore and AI confidence probability bars.
 - Phase tracker widget.
 - Agent feed widget.
