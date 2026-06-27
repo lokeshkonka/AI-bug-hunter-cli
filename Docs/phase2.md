@@ -74,9 +74,11 @@ Each file is assigned a relevance score (0.0–1.0) before inclusion in the inde
 
 ---
 
-## Codebase Index (`index.md`)
+### Codebase Index (`index.md`) & Vector DB Ingestion
 
-After the manifest is built, `ReconAgent` creates `.bughunter/runs/<run_id>/index.md`.
+After the manifest is built, `ReconAgent` performs two indexing steps:
+1. **Lexical Indexing (SQLite & Markdown)**: Creates `.bughunter/runs/<run_id>/index.md` for deterministic snippet selection and Semgrep evidence linking.
+2. **Semantic Vector Indexing (ChromaDB)**: Ingests the codebase into a local ChromaDB collection (`.bughunter/vector_store/`) specifically to power the interactive REPL's RAG features, allowing users to ask questions like "How is authentication handled?".
 
 `index.md` is a compact security navigation document. It lets later agents identify exact files, routes, symbols, and line ranges without rereading the entire repository.
 
