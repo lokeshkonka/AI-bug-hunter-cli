@@ -75,7 +75,7 @@ Bug Hunter CLI is published on PyPI. You do not need to clone the repository to 
 
 ```bash
 # Install globally via pip
-pip install bug-hunter-cli==0.1.1
+pip install bug-hunter-cli==0.1.4
 ```
 
 ### Starting a Scan
